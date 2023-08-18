@@ -1,7 +1,7 @@
-// import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client'
 import { NextResponse } from 'next/server'
-import prisma from '../../../../lib/prisma'
-// const prisma = new PrismaClient()
+// import prisma from '../../../../lib/prisma'
+const prisma = new PrismaClient()
 const validateFields = [{ field: 'email', message: 'el correo electronico ya existe!' }]
 
 export const GET = async (req, res) => {
